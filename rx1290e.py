@@ -1,3 +1,4 @@
+#rx1290e akan di gabung ke rx1290d
 import xml.etree.ElementTree as ET
 from selenium import webdriver
 from selenium.webdriver.common.by import By
