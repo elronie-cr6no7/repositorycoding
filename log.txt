@@ -1,0 +1,2 @@
+2023-10-09 09:47:18,864 - ERROR: Terjadi kesalahan saat menyimpan data ke Google Spreadsheet: ('Unexpected credentials type', None, 'Expected', 'service_account')
+2023-10-09 09:54:24,009 - ERROR: Terjadi kesalahan saat menyimpan data ke Google Spreadsheet: ('Unexpected credentials type', None, 'Expected', 'service_account')

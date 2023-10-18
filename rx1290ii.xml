@@ -1,0 +1,579 @@
+<!--  Ericsson Television Limited DCP  -->
+<dcpDoc ver="1.0">
+<tcfData ver="1.0" path="/" device="SPARP3 proto">
+<!--  N=Name,F=Field,V=Value,S=Selection,C=Choice,D=Description,R=Record,F=Field  -->
+<Node N="root">
+<Table N="Status" Size="0">
+<FieldMap F0="Time" F1="Severity" F2="Name" F3="Source" F4="Slot" F5="Port" F6="AlarmId"/>
+<R F0="0000-00-00 00:00:00" F1="Major" F2="Audio 2 stopped" F3="RX1290" F4="1" F5="0" F6="6"/>
+<R F0="0000-00-00 00:00:00" F1="Major" F2="Audio 3 stopped" F3="RX1290" F4="1" F5="0" F6="9"/>
+<R F0="0000-00-00 00:00:00" F1="Major" F2="Audio 4 stopped" F3="RX1290" F4="1" F5="0" F6="10"/>
+</Table>
+<Node N="Device Info">
+<Table N="Network" Size="5">
+<FieldMap F0="Index" F1="IP Address" F2="Subnet Mask" F3="Router"/>
+<R F0="0" F1="192.168.1.105" F2="255.255.255.0" F3="192.168.1.1"/>
+</Table>
+<Str N="Name" V=""/>
+<Str N="Product Name" V="Multi-Format Receiver - RX1290"/>
+<Str N="Product Version" V="1.0"/>
+<Str N="XPO Version" V="1.0"/>
+<Str N="XPO Tree Version" V="1.0"/>
+<Int32 N="Alarm Status" V="5"/>
+<DateTime N="Current Time" V="2023-10-17 02:40:25"/>
+<Node N="Adjust Date and Time">
+<!--  Adjust Date and Time[5]  -->
+</Node>
+<Table N="Modules" Size="20">
+<FieldMap F0="Slot" F1="ModuleID" F2="Name" F3="HW-ID" F4="Serial Number" F5="SW Version" F6="SW Build Time" F7="FW Version" F8="PLD Version"/>
+<R F0="0" F1="S14212" F2="Motherboard" F3="03.00" F4="25958" F5="3.15.12 (0) " F6="Fri Jun 15 12:23:26 2012" F7="5.14.10" F8="06"/>
+<R F0="1" F1="1081" F2="RX1290 ASI Input" F3="" F4="" F5="" F6="" F7="" F8=""/>
+<R F0="2" F1="1085" F2="RX1290 S2 Input V0" F3="3.0" F4="" F5="" F6="" F7="1.000" F8=""/>
+<R F0="3" F1="1071" F2="RX1290 CA module" F3=" " F4="" F5=" " F6="" F7=" " F8=" "/>
+<R F0="4" F1="1095" F2="RX1290 Decoder module" F3=" " F4="" F5=" " F6="" F7=" " F8=" "/>
+</Table>
+<Table N="Ports" Size="100">
+<FieldMap F0="Slot" F1="Port" F2="Type" F3="TypeValue" F4="Direction" F5="DirectionValue"/>
+<R F0="0" F1="1" F2="Ethernet" F3="4" F4="Input" F5="1"/>
+<R F0="0" F1="2" F2="Data" F3="20" F4="Output" F5="2"/>
+<R F0="0" F1="3" F2="Remote" F3="22" F4="Input" F5="1"/>
+<R F0="1" F1="1" F2="ASI" F3="3" F4="Input" F5="1"/>
+<R F0="2" F1="1" F2="QAM" F3="6" F4="Input" F5="1"/>
+<R F0="2" F1="2" F2="QAM" F3="6" F4="Input" F5="1"/>
+<R F0="2" F1="3" F2="QAM" F3="6" F4="Input" F5="1"/>
+<R F0="2" F1="4" F2="QAM" F3="6" F4="Input" F5="1"/>
+<R F0="4" F1="1" F2="Video" F3="2" F4="Output" F5="2"/>
+<R F0="4" F1="2" F2="Reference" F3="10" F4="Input" F5="1"/>
+<R F0="4" F1="3" F2="Audio" F3="1" F4="Output" F5="2"/>
+<R F0="4" F1="4" F2="Audio" F3="1" F4="Output" F5="2"/>
+<R F0="4" F1="5" F2="HD-SDI" F3="21" F4="Output" F5="2"/>
+<R F0="4" F1="6" F2="HD-SDI" F3="21" F4="Output" F5="2"/>
+<R F0="4" F1="7" F2="HD-SDI" F3="21" F4="Output" F5="2"/>
+</Table>
+<Table N="Trap Destination Table" Size="5">
+<FieldMap F0="Index" F1="IpAddress"/>
+</Table>
+<Table N="Alarm Details" Size="0">
+<FieldMap F0="Time" F1="Severity" F2="Name" F3="Source" F4="Slot" F5="Port" F6="AlarmId" F7="SubId" F8="Info" F9="Sequence Number"/>
+<R F0="0000-00-00 00:00:00" F1="Major" F2="Audio 2 stopped" F3="RX1290" F4="1" F5="0" F6="6" F7="0" F8="Audio 2 stopped" F9="0"/>
+<R F0="0000-00-00 00:00:00" F1="Major" F2="Audio 3 stopped" F3="RX1290" F4="1" F5="0" F6="9" F7="0" F8="Audio 3 stopped" F9="0"/>
+<R F0="0000-00-00 00:00:00" F1="Major" F2="Audio 4 stopped" F3="RX1290" F4="1" F5="0" F6="10" F7="0" F8="Audio 4 stopped" F9="0"/>
+</Table>
+<Table N="Alarm Filters" Size="16">
+<FieldMap F0="AlarmId" F1="Index" F2="Name" F3="Source" F4="Severity" F5="Slot:Port:Subid Filter"/>
+</Table>
+<Table N="Alarm Types" Size="0">
+<FieldMap F0="AlarmId" F1="Name" F2="Source" F3="Severity"/>
+<R F0="1" F1="Signal Lock lost" F2="RX1290" F3="Major"/>
+<R F0="2" F1="BER too high" F2="RX1290" F3="Major"/>
+<R F0="3" F1="MER too low" F2="RX1290" F3="Major"/>
+<R F0="4" F1="Video stopped" F2="RX1290" F3="Major"/>
+<R F0="5" F1="Audio 1 stopped" F2="RX1290" F3="Major"/>
+<R F0="6" F1="Audio 2 stopped" F2="RX1290" F3="Major"/>
+<R F0="7" F1="Temperature too high" F2="RX1290" F3="Major"/>
+<R F0="8" F1="CN margin too low" F2="RX1290" F3="Major"/>
+<R F0="9" F1="Audio 3 stopped" F2="RX1290" F3="Major"/>
+<R F0="10" F1="Audio 4 stopped" F2="RX1290" F3="Major"/>
+<R F0="13" F1="SNR too low" F2="RX1290" F3="Major"/>
+<R F0="14" F1="Port 1 net util too high" F2="E224" F3="Major"/>
+<R F0="15" F1="Port 2 net util too high" F2="E224" F3="Major"/>
+<R F0="16" F1="MDI DF too high" F2="E224" F3="Major"/>
+<R F0="17" F1="MDI MLR too high" F2="E224" F3="Major"/>
+</Table>
+<Node N="Remote Configuration">
+<Choice N="opMode" V="Front Panel"/>
+<Choice N="serialProtocol" V="RS232"/>
+<Int32 N="remotePort" V="0"/>
+<!--  Remote Configuration[5]  -->
+</Node>
+<Node N="Alarm Control">
+<Table N="Alarm status table" Size="17">
+<FieldMap F0="AlarmId" F1="Name" F2="Action" F3="Threshold"/>
+<R F0="1" F1="Signal Lock lost" F2="Set Alarm" F3="0"/>
+<R F0="2" F1="BER too high" F2="No Alarm" F3="40000"/>
+<R F0="3" F1="MER too low" F2="No Alarm" F3="0"/>
+<R F0="4" F1="Video stopped" F2="No Alarm" F3="0"/>
+<R F0="5" F1="Audio 1 stopped" F2="No Alarm" F3="0"/>
+<R F0="6" F1="Audio 2 stopped" F2="No Alarm" F3="0"/>
+<R F0="7" F1="Temperature too high" F2="No Alarm" F3="193"/>
+<R F0="8" F1="CN margin too low" F2="Set Alarm" F3="30"/>
+<R F0="9" F1="Audio 3 stopped" F2="No Alarm" F3="0"/>
+<R F0="10" F1="Audio 4 stopped" F2="No Alarm" F3="0"/>
+<R F0="13" F1="SNR too low" F2="No Alarm" F3="400"/>
+<R F0="14" F1="Port 1 net util too high" F2="No Alarm" F3="100"/>
+<R F0="15" F1="Port 2 net util too high" F2="No Alarm" F3="100"/>
+<R F0="16" F1="MDI DF too high" F2="No Alarm" F3="100000"/>
+<R F0="17" F1="MDI MLR too high" F2="No Alarm" F3="10"/>
+</Table>
+<Choice N="Relay Signal Lock lost" V="Set Alarm"/>
+<Choice N="Relay BER too high" V="No Alarm"/>
+<Choice N="Relay MER too low" V="No Alarm"/>
+<Choice N="Relay Video stopped" V="No Alarm"/>
+<Choice N="Relay Audio 1 stopped" V="No Alarm"/>
+<Choice N="Relay Audio 2 stopped" V="No Alarm"/>
+<Choice N="Relay Temperature too high" V="No Alarm"/>
+<Choice N="Relay CN margin too low" V="Set Alarm"/>
+<Choice N="Relay Audio 3 stopped" V="No Alarm"/>
+<Choice N="Relay Audio 4 stopped" V="No Alarm"/>
+<Choice N="Relay Audio 5 stopped" V="No Alarm"/>
+<Choice N="Relay Audio 6 stopped" V="No Alarm"/>
+<Choice N="Relay SNR too low" V="No Alarm"/>
+<Choice N="Relay Port 1 net util too high" V="No Alarm"/>
+<Choice N="Relay Port 2 net util too high" V="No Alarm"/>
+<Choice N="Relay MDI DF too high" V="No Alarm"/>
+<Choice N="Relay MDI MLR too high" V="No Alarm"/>
+<Int32 N="m_alarmEbNo" V="3.0"/>
+<Int32 N="m_alarmBer" V="4000.0"/>
+<Int32 N="m_alarmMer" V="0.0"/>
+<Int32 N="m_alarmSnr" V="40.0"/>
+<Int32 N="m_alarmNetUtil_1" V="100"/>
+<Int32 N="m_alarmNetUtil_2" V="100"/>
+<Int32 N="m_alarmMdiDf" V="100.000"/>
+<Int32 N="m_alarmMdiMlr" V="0.010"/>
+<!--  Alarm Control[5]  -->
+</Node>
+<Node N="Advanced Features">
+<Table N="Licensed Features" Size="30">
+<FieldMap F0="Index" F1="Feature" F2="State"/>
+<R F0="0" F1="AC3 Audio" F2="DISABLED"/>
+<R F0="1" F1="TTV DirectorV5" F2="ENABLED"/>
+<R F0="2" F1="Common Interface CA" F2="DISABLED"/>
+<R F0="3" F1="RAS CA System" F2="ENABLED"/>
+<R F0="4" F1="Provider Lock" F2="DISABLED"/>
+<R F0="5" F1="16QAM Decoding" F2="DISABLED"/>
+<R F0="6" F1="Ethernet High-speed Data" F2="DISABLED"/>
+<R F0="7" F1="Low Symbol Rate" F2="ENABLED"/>
+<R F0="8" F1="8PSK" F2="DISABLED"/>
+<R F0="9" F1="Down-conversion" F2="ENABLED"/>
+<R F0="10" F1="Up-conversion" F2="DISABLED"/>
+<R F0="12" F1="H264 SD Decoding" F2="ENABLED"/>
+<R F0="13" F1="H264 HD Decoding" F2="ENABLED"/>
+<R F0="14" F1="MPEG2 HD 4:2:2" F2="ENABLED"/>
+<R F0="15" F1="DVBS2 QPSK" F2="ENABLED"/>
+<R F0="16" F1="DVBS2 8PSK" F2="ENABLED"/>
+<R F0="17" F1="DVBS2 16APSK" F2="DISABLED"/>
+<R F0="18" F1="DVBS2 32APSK" F2="DISABLED"/>
+<R F0="19" F1="IP PROFEC" F2="DISABLED"/>
+<R F0="20" F1="IF Input" F2="DISABLED"/>
+<R F0="21" F1="Constellation Output" F2="DISABLED"/>
+<R F0="22" F1="Low Delay" F2="DISABLED"/>
+<R F0="23" F1="2 CH Audio Upgrade" F2="ENABLED"/>
+<R F0="24" F1="XPO HTTP Password Protection" F2="DISABLED"/>
+<R F0="25" F1="AAC Audio" F2="DISABLED"/>
+<R F0="27" F1="Multiservice Descramble" F2="DISABLED"/>
+<R F0="28" F1="Phase Aligned Audio" F2="DISABLED"/>
+</Table>
+<!--  Advanced Features[5]  -->
+</Node>
+<Node N="XPO Password Protection">
+<!--  XPO Password Protection[5]  -->
+</Node>
+<!--  Device Info[4]  -->
+</Node>
+<Node N="Presets">
+<Table N="Presets selection" Size="0">
+<FieldMap F0="m_preSelect" F1="m_preSelectName"/>
+<R F0="0" F1="--------------------------------"/>
+<R F0="1" F1=""/>
+<R F0="2" F1=""/>
+<R F0="3" F1=""/>
+<R F0="4" F1="NO STORED SERVICE"/>
+<R F0="5" F1="NO STORED SERVICE"/>
+<R F0="6" F1="NO STORED SERVICE"/>
+<R F0="7" F1="NO STORED SERVICE"/>
+<R F0="8" F1="NO STORED SERVICE"/>
+<R F0="9" F1="NO STORED SERVICE"/>
+<R F0="10" F1="NO STORED SERVICE"/>
+<R F0="11" F1="NO STORED SERVICE"/>
+<R F0="12" F1="NO STORED SERVICE"/>
+<R F0="13" F1="NO STORED SERVICE"/>
+<R F0="14" F1="NO STORED SERVICE"/>
+<R F0="15" F1="NO STORED SERVICE"/>
+<R F0="16" F1="NO STORED SERVICE"/>
+<R F0="17" F1="NO STORED SERVICE"/>
+<R F0="18" F1="NO STORED SERVICE"/>
+<R F0="19" F1="NO STORED SERVICE"/>
+<R F0="20" F1="NO STORED SERVICE"/>
+<R F0="21" F1="NO STORED SERVICE"/>
+<R F0="22" F1="NO STORED SERVICE"/>
+<R F0="23" F1="NO STORED SERVICE"/>
+<R F0="24" F1="NO STORED SERVICE"/>
+<R F0="25" F1="NO STORED SERVICE"/>
+<R F0="26" F1="NO STORED SERVICE"/>
+<R F0="27" F1="NO STORED SERVICE"/>
+<R F0="28" F1="NO STORED SERVICE"/>
+<R F0="29" F1="NO STORED SERVICE"/>
+<R F0="30" F1="NO STORED SERVICE"/>
+<R F0="31" F1="NO STORED SERVICE"/>
+<R F0="32" F1="NO STORED SERVICE"/>
+<R F0="33" F1="NO STORED SERVICE"/>
+<R F0="34" F1="NO STORED SERVICE"/>
+<R F0="35" F1="NO STORED SERVICE"/>
+<R F0="36" F1="NO STORED SERVICE"/>
+<R F0="37" F1="NO STORED SERVICE"/>
+<R F0="38" F1="NO STORED SERVICE"/>
+<R F0="39" F1="NO STORED SERVICE"/>
+<R F0="40" F1=""/>
+</Table>
+<Int32 N="m_preSelect" V="0"/>
+<Int32 N="m_preSave" V="0"/>
+<!--  Presets[4]  -->
+</Node>
+<Node N="Input">
+<Str N="m_inputLock" V="Locked"/>
+<Str N="m_inputPcktSize" V="188"/>
+<Str N="m_inputTid" V=" 4165"/>
+<Int32 N="Bit Rate" V="17.083"/>
+<Str N="m_inputCurrSrc" V="SAT"/>
+<Table N="Input cards" Size="0">
+<FieldMap F0="m_inputSrcSel" F1="inputCardName"/>
+<R F0="0" F1="ASI"/>
+<R F0="1" F1="SAT"/>
+</Table>
+<Int32 N="m_inputSrcSel" V="1"/>
+<Node N="SAT">
+<Choice N="Input" V="RF Input 1"/>
+<Choice N="Status" V="Locked"/>
+<Str N="Signal Level" V="-40 dBm"/>
+<Str N="Post Viterbi BER" V="1.0 E-8"/>
+<Str N="C/N margin" V="11.1 dB"/>
+<Str N="C/N" V="17.3 dB"/>
+<Str N="Standard" V="DVB-S2"/>
+<Str N="Modulation" V="8PSK"/>
+<Str N="FEC rate" V="3/5"/>
+<Str N="Spectral Sense" V="INVERTED"/>
+<Str N="Pilot Symbols" V="OFF"/>
+<Str N="Frame Size" V="NORMAL"/>
+<Int32 N="Satellite Frequency 1" V="3888.000"/>
+<Int32 N="Symbol Rate 1" V="9.600000"/>
+<Int32 N="LNB LO Frequency 1" V="5150"/>
+<Choice N="Search Range Mode (S2 Only) 1" V="AUTOMATIC"/>
+<Int32 N="Search Range 1" V="5000"/>
+<Choice N="Modulation FEC 1" V="DVB-S2 AUTO"/>
+<Choice N="m_pLnbPowerOutput1" V="Off"/>
+<Choice N="m_pLncVoltage1" V="18 V (horiz)"/>
+<Bool N="LNB 22khz 1" V="False"/>
+<Choice N="m_pSpectrumSense1" V="AUTO"/>
+<Choice N="m_pRollOff1" V="35%"/>
+<Int32 N="Satellite Frequency 2" V="1200.000"/>
+<Int32 N="Symbol Rate 2" V="6.250000"/>
+<Int32 N="LNB LO Frequency 2" V="0"/>
+<Choice N="Search Range Mode (S2 Only) 2" V="AUTOMATIC"/>
+<Int32 N="Search Range 2" V="2500"/>
+<Choice N="Modulation FEC 2" V="DVB-S QPSK AUTO"/>
+<Choice N="m_pLnbPowerOutput2" V="Off"/>
+<Choice N="m_pLncVoltage2" V="18 V (horiz)"/>
+<Bool N="LNB 22khz 2" V="True"/>
+<Choice N="m_pSpectrumSense2" V="AUTO"/>
+<Choice N="m_pRollOff2" V="35%"/>
+<Int32 N="Satellite Frequency 3" V="3906.000"/>
+<Int32 N="Symbol Rate 3" V="6.250000"/>
+<Int32 N="LNB LO Frequency 3" V="5150"/>
+<Choice N="Search Range Mode (S2 Only) 3" V="AUTOMATIC"/>
+<Int32 N="Search Range 3" V="5000"/>
+<Choice N="Modulation FEC 3" V="DVB-S QPSK AUTO"/>
+<Choice N="m_pLnbPowerOutput3" V="On"/>
+<Choice N="m_pLncVoltage3" V="18 V (horiz)"/>
+<Bool N="LNB 22khz 3" V="True"/>
+<Choice N="m_pSpectrumSense3" V="AUTO"/>
+<Choice N="m_pRollOff3" V="35%"/>
+<Int32 N="Satellite Frequency 4" V="3906.000"/>
+<Int32 N="Symbol Rate 4" V="6.250000"/>
+<Int32 N="LNB LO Frequency 4" V="5150"/>
+<Choice N="Search Range Mode (S2 Only) 4" V="AUTOMATIC"/>
+<Int32 N="Search Range 4" V="5000"/>
+<Choice N="Modulation FEC 4" V="DVB-S QPSK AUTO"/>
+<Choice N="m_pLnbPowerOutput4" V="On"/>
+<Choice N="m_pLncVoltage4" V="18 V (horiz)"/>
+<Bool N="LNB 22khz 4" V="False"/>
+<Choice N="m_pSpectrumSense4" V="AUTO"/>
+<Choice N="m_pRollOff4" V="35%"/>
+<!--  SAT[5]  -->
+</Node>
+<!--  Input[4]  -->
+</Node>
+<Node N="Service">
+<Str N="pcrstat" V=" PRESENT"/>
+<Str N="pcrpid" V="0072"/>
+<Str N="m_serviceIdStat" V="2 - "/>
+<Bool N="m_serviceHuntMode" V="False"/>
+<Choice N="m_serviceSiMode" V="AUTO"/>
+<Choice N="m_pmtUpdateMode" V="REFRESH"/>
+<Table N="Services" Size="0">
+<FieldMap F0="m_serviceIdSel" F1="serviceProgName"/>
+<R F0="1" F1=""/>
+<R F0="2" F1=""/>
+<R F0="5" F1=""/>
+<R F0="1001" F1=""/>
+<R F0="3" F1=""/>
+</Table>
+<Int32 N="m_serviceIdSel" V="2"/>
+<Int32 N="m_serviceIdStored" V="2"/>
+<Node N="Advanced">
+<Int32 N="m_advNetwrkId" V="0"/>
+<Int32 N="m_advOrigNetwrkId" V="0"/>
+<Str N="m_advFrmSyncStat" V="SIGNAL NOT PRESENT "/>
+<Bool N="m_advFrmSyncEn" V="True"/>
+<Choice N="m_advFailMode" V="75% BARS AND RED"/>
+<Choice N="m_advframeStoreMode" V="DISABLED"/>
+<Choice N="m_advTestPattrn" V="NONE"/>
+<Choice N="m_advVidDownConvMode" V="ANAMORPHIC"/>
+<Bool N="m_advVidDownConvAutoMode" V="False"/>
+<Choice N="m_advVidDownAFDSustainTimeoutPeriod" V="0 Sec"/>
+<Str N="m_advVidUpConvModeFitted" V="NOT FITTED"/>
+<Choice N="m_advVidMonitorAspectRatio" V="16:9"/>
+<Int32 N="m_advFsyncPalOffst" V="0"/>
+<Int32 N="m_advFsyncNtscOffst" V="0"/>
+<Int32 N="m_au1UsrPid" V="36"/>
+<Int32 N="m_au2UsrPid" V="147"/>
+<Int32 N="m_au3UsrPid" V="0"/>
+<Int32 N="m_au4UsrPid" V="0"/>
+<Choice N="m_au1UsrFmt" V="MUS"/>
+<Choice N="m_au2UsrFmt" V="MUS"/>
+<Choice N="m_au3UsrFmt" V="MUS"/>
+<Choice N="m_au4UsrFmt" V="MUS"/>
+<Choice N="m_advAu1DigOutput" V="AES3"/>
+<Choice N="m_advAu2DigOutput" V="AES3"/>
+<Choice N="m_advAu3DigOutput" V="AES3"/>
+<Choice N="m_advAu4DigOutput" V="AES3"/>
+<Choice N="m_advAu1Routing" V="STEREO"/>
+<Choice N="m_advAu2Routing" V="STEREO"/>
+<Choice N="m_advAu3Routing" V="STEREO"/>
+<Choice N="m_advAu4Routing" V="STEREO"/>
+<Str N="m_advAu1DlyAdj" V="0.0"/>
+<Str N="m_advAu2DlyAdj" V="0.0"/>
+<Str N="m_advAu3DlyAdj" V="0.0"/>
+<Str N="m_advAu4DlyAdj" V="0.0"/>
+<Int32 N="m_advAu1ClipLvl" V="12"/>
+<Int32 N="m_advAu2ClipLvl" V="18"/>
+<Choice N="m_advEmbedAuDid1" V="GROUP1"/>
+<Choice N="m_advEmbedAuDid2" V="GROUP1"/>
+<Choice N="m_advEmbedAuDid3" V="GROUP2"/>
+<Choice N="m_advEmbedAuDid4" V="GROUP2"/>
+<Choice N="m_advAu1OpRouting" V="AES1"/>
+<Choice N="m_advAu2OpRouting" V="AES2"/>
+<Choice N="m_advAu3OpRouting" V="AES3"/>
+<Choice N="m_advAu4OpRouting" V="AES4"/>
+<Choice N="m_advAu5OpRouting" V="AES1"/>
+<Choice N="m_advAu6OpRouting" V="AES1"/>
+<Choice N="m_advAu1BitDepthSrc" V="Force 24Bit"/>
+<Choice N="m_advAu2BitDepthSrc" V="Force 24Bit"/>
+<Choice N="m_advAu3BitDepthSrc" V="Force 24Bit"/>
+<Choice N="m_advAu4BitDepthSrc" V="Force 24Bit"/>
+<Choice N="m_advAu5BitDepthSrc" V="SMPTE 302M bits_per_sample"/>
+<Choice N="m_advAu6BitDepthSrc" V="SMPTE 302M bits_per_sample"/>
+<Choice N="m_advVidTestStd" V="AUTO"/>
+<Choice N="m_advVidOutMode" V="RGB "/>
+<Str N="m_advDelayModeFitted" V="NOT FITTED"/>
+<Choice N="m_advVidTrisMode" V="ON ALL "/>
+<Int32 N="m_advVidDly420" V="0"/>
+<Choice N="m_adv525FirstActLin" V="23"/>
+<Int32 N="m_advVidDly422" V="0"/>
+<Int32 N="m_videoUsrPid" V="0"/>
+<Choice N="m_videoUsrFmt" V="MPEG2"/>
+<Int32 N="m_pcrUsrPid" V="0"/>
+<Choice N="m_vidForcedChromaMode" V="AUTO"/>
+<Choice N="m_vid544upscaleMode" V="STRICT"/>
+<Choice N="m_audio1ValidityMode" V="SILENCE"/>
+<Choice N="m_audio2ValidityMode" V="SILENCE"/>
+<Choice N="m_audio3ValidityMode" V="SILENCE"/>
+<Choice N="m_audio4ValidityMode" V="SILENCE"/>
+<Choice N="au1AC3OpMode" V="COMP LINE"/>
+<Choice N="au2AC3OpMode" V="COMP LINE"/>
+<Choice N="au3AC3OpMode" V="COMP LINE"/>
+<Choice N="au4AC3OpMode" V="COMP LINE"/>
+<!--  Advanced[5]  -->
+</Node>
+<Node N="VBI">
+<Str N="m_vbiStat" V="-----------"/>
+<Str N="m_vbiPid" V="----"/>
+<Str N="vbivitcstat" V=""/>
+<Str N="vbiccstat" V="NOT PRESENT"/>
+<Str N="vbivitcoutstat" V="FAIL"/>
+<Str N="vbiccoutstat" V="FAIL"/>
+<Choice N="m_vbiEnVitc" V="VIDEO"/>
+<Choice N="m_vbiEnCC" V="ENABLE"/>
+<Choice N="m_vbiCCLine" V="Line 11"/>
+<Choice N="m_vbiEnIts" V="ENABLED (CCIR)"/>
+<Str N="vbiitsstat" V="OK"/>
+<Choice N="m_vbiVitc525_0" V="14"/>
+<Choice N="m_vbiVitc525_1" V="16"/>
+<Choice N="m_vbiVitc625_0" V="19"/>
+<Choice N="m_vbiVitc625_1" V="21"/>
+<Str N="vbivpsstat" V="NOT PRESENT"/>
+<Str N="vbiwssstat" V="NOT PRESENT"/>
+<Str N="vbividxstat" V="NOT PRESENT"/>
+<Str N="vbimonochromestat" V="NOT PRESENT"/>
+<Str N="vbiamolstat" V="NOT PRESENT"/>
+<Str N="vbivpsoutstat" V="FAIL"/>
+<Str N="vbiwssoutstat" V="FAIL"/>
+<Str N="vbividxoutstat" V="FAIL"/>
+<Str N="vbimonochromeoutstat" V="FAIL"/>
+<Str N="vbiamoloutstat" V="FAIL"/>
+<Choice N="m_vbiEnVps" V="ENABLE"/>
+<Choice N="m_vbiEnWss" V="ENABLED - VBI PID"/>
+<Choice N="m_vbiEnVideoIndex" V="ENABLE"/>
+<Choice N="m_vbiEnMonochrome" V="ENABLE"/>
+<Choice N="m_vbiEnAmol" V="ENABLE"/>
+<Choice N="m_vbiEnPedestal" V="DISABLE"/>
+<!--  VBI[5]  -->
+</Node>
+<Node N="VANC">
+<Str N="m_vancStat" V="-----------"/>
+<Str N="m_vancPid" V="----"/>
+<Table N="VANC PIDs" Size="0">
+<FieldMap F0="m_vancSelPid" F1="vancSelPidTxt"/>
+<R F0="0" F1="USER PID"/>
+</Table>
+<Bool N="m_vancEn" V="True"/>
+<!--  VANC[5]  -->
+</Node>
+<Node N="Splice">
+<Str N="m_spliceCount" V="-"/>
+<Str N="m_splicePid" V="----"/>
+<Bool N="m_spliceEn" V="True"/>
+<!--  Splice[5]  -->
+</Node>
+<Node N="Station ID">
+<Str N="m_stationIDStatus" V="INSERTED"/>
+<Bool N="m_stationIDEn" V="True"/>
+<Str N="m_stationIDName" V="RX1290"/>
+<!--  Station ID[5]  -->
+</Node>
+<Node N="AFD">
+<Bool N="m_AFDEn" V="True"/>
+<Str N="m_AFDStatus" V="NOT PRESENT"/>
+<Choice N="m_AFDLineNumber" V="Line 11"/>
+<!--  AFD[5]  -->
+</Node>
+<Node N="Data">
+<Str N="m_dataAsyStat" V="NOT PRESENT"/>
+<Choice N="m_dataAsyUserBitRate" V="9600"/>
+<Str N="m_dataAsyAutoBitRate" V="-----"/>
+<Str N="m_dataAsyOutStat" V="FAIL"/>
+<Str N="m_dataAsyPid" V=""/>
+<Int32 N="m_dataAsyUsrPid" V="0"/>
+<Bool N="m_dataAsyEnable" V="True"/>
+<Choice N="m_dataAsyStreamType" V="FORMAT TTV2 "/>
+<Table N="Async data PIDs" Size="0">
+<FieldMap F0="m_dataAsySelPid" F1="dataAsySelPidTxt"/>
+<R F0="0" F1="USER PID"/>
+</Table>
+<!--  Data[5]  -->
+</Node>
+<Node N="Teletext">
+<Str N="ttstat" V="-----------"/>
+<Str N="ttpid" V="----"/>
+<Choice N="m_ttInsert" V="ENABLE"/>
+<Choice N="m_ttSync" V="ENABLE"/>
+<Str N="m_ttOutStat" V="FAIL"/>
+<Table N="Teletext PIDs" Size="0">
+<FieldMap F0="m_ttSelPid" F1="ttSelPidTxt"/>
+<R F0="0" F1="USER PID"/>
+</Table>
+<!--  Teletext[5]  -->
+</Node>
+<Node N="DVB Subtitles">
+<Str N="m_dvbsubtState" V="STOP"/>
+<Str N="m_dvbsubtStatus" V="NOT PRESENT"/>
+<Str N="m_dvbsubtError" V="---"/>
+<Choice N="m_dvbsubtLang" V="???"/>
+<Choice N="m_dvbsubtEnable" V="ENABLE"/>
+<Int32 N="m_dvbsubtSelPid" V="0"/>
+<Int32 N="m_dvbsubtUsrPid" V="0"/>
+<Choice N="m_dvbsubtScale" V="0"/>
+<Choice N="m_dvbsubtAlign" V="DEFAULT"/>
+<Choice N="m_dvbSubtRecovery" V="ENABLE"/>
+<Table N="DVBSubtitles PIDs" Size="0">
+<FieldMap F0="m_dvbsubtSelPid" F1="dvbsubtSelPidTxt" F2="dvbsubtSelPidLang"/>
+<R F0="0" F1="USER PID" F2="???"/>
+</Table>
+<!--  DVB Subtitles[5]  -->
+</Node>
+<Str N="videoCodType" V="H264"/>
+<Str N="m_videoStat" V=" OK"/>
+<Int32 N="m_videoHRes" V="1920"/>
+<Int32 N="m_videoVRes" V="1080"/>
+<Str N="bitrate" V=" 4.20 MBits/s"/>
+<Str N="m_videoFrmRate" V="25 Hz "/>
+<Str N="codingmod" V="4:2:0"/>
+<Str N="aspectratio" V="16:9"/>
+<Str N="buflevl" V="15%"/>
+<Str N="m_vidGOP" V="IP "/>
+<Str N="m_vidProfile" V="Main@Level4.0 "/>
+<Str N="m_ScanFormat" V="i "/>
+<Choice N="m_vid525Std" V="NTSC-M "/>
+<Choice N="m_vid625Std" V="PAL-B/G/I"/>
+<Choice N="m_videoDefaultStandard" V="720p 50Hz"/>
+<Choice N="m_pcrpidsel" V="0072 - SERVICE"/>
+<Choice N="m_videoPidSel" V="0072 - SERVICE"/>
+<Choice N="m_au1PidSel" V="0073 - - -"/>
+<Choice N="m_au2PidSel" V="---- NONE"/>
+<Choice N="m_au3PidSel" V="---- NONE"/>
+<Choice N="m_au4PidSel" V="---- NONE"/>
+<Str N="audmode" V="STANDARD"/>
+<Str N="audio1state" V=" OK"/>
+<Str N="audio1codtype" V="MUS"/>
+<Str N="audio1lang" V="- -"/>
+<Str N="m_au1BufLev" V="18%"/>
+<Str N="audio1smplrate" V="48.0 KHz"/>
+<Str N="audio1bitrate" V="256 KBits/s"/>
+<Str N="m_au1BitDepth" V="24 Bit"/>
+<Choice N="au1dwnmix" V="SURROUND STEREO"/>
+<Choice N="m_au1dwnmixAlg" V="ISO_13818"/>
+<Str N="audio2state" V="STOP"/>
+<Str N="audio2codtype" V="------"/>
+<Str N="audio2lang" V=""/>
+<Str N="m_au2BufLev" V="---"/>
+<Str N="audio2smplrate" V="--.- KHz"/>
+<Str N="audio2bitrate" V="--- KBits/s"/>
+<Str N="m_au2BitDepth" V="24 Bit"/>
+<Choice N="au2dwnmix" V="SURROUND STEREO"/>
+<Str N="audio3state" V="STOP"/>
+<Str N="audio3codtype" V="------"/>
+<Str N="audio3lang" V=""/>
+<Str N="m_au3BufLev" V="---"/>
+<Str N="audio3smplrate" V="--.- KHz"/>
+<Str N="audio3bitrate" V="--- KBits/s"/>
+<Str N="m_au3BitDepth" V="24 Bit"/>
+<Choice N="au3dwnmix" V="SURROUND STEREO"/>
+<Str N="audio4state" V="STOP"/>
+<Str N="audio4codtype" V="------"/>
+<Str N="audio4lang" V=""/>
+<Str N="m_au4BufLev" V="---"/>
+<Str N="audio4smplrate" V="--.- KHz"/>
+<Str N="audio4bitrate" V="--- KBits/s"/>
+<Str N="m_au4BitDepth" V="24 Bit"/>
+<Choice N="au4dwnmix" V="SURROUND STEREO"/>
+<!--  Service[4]  -->
+</Node>
+<Node N="Conditional Access">
+<Str N="m_caStat" V="CLEAR OR UNKNOWN CA"/>
+<Str N="m_caCasId" V="------"/>
+<Choice N="m_caBissMod" V="DISABLED"/>
+<Str N="m_caProvLockFitted" V="NOT FITTED"/>
+<Choice N="descCaRasMod" V="DSNG KEY"/>
+<Int32 N="descCaDsngKey" V="0"/>
+<Bool N="m_caNcpExtTimeout" V="False"/>
+<Str N="m_caNcpMsg" V=""/>
+<Str N="m_caDnldStat" V="000 00 04-00 000"/>
+<Str N="m_caManId" V="DEh"/>
+<Str N="m_caHwType" V="65h"/>
+<Str N="m_caModelNum" V="1Dh"/>
+<Str N="m_caDir5Authorisation" V="STOPPED"/>
+<Str N="m_caDir5UniqueId" V="0000 0343 9764 9012"/>
+<!--  Conditional Access[4]  -->
+</Node>
+<Node N="Output">
+<Choice N="TSOut" V="POST INPUT"/>
+<Choice N="m_output_connector_1" V="ASI"/>
+<Choice N="m_output_connector_2" V="ASI"/>
+<Choice N="m_output_connector_3" V="ASI"/>
+<Choice N="m_output_asi_output_mode" V="LEGACY"/>
+<!--  Output[4]  -->
+</Node>
+<!--  root[3]  -->
+</Node>
+</tcfData>
+<dcpStatus value="0" text="Success"/>
+</dcpDoc>
